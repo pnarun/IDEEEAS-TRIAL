@@ -1,153 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IDEEEAS</title>
-        <link rel="stylesheet" href="landing.css">
-        <link rel="stylesheet" href="icons.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script type="text/javascript"></script>
-      </head>
-      
-      <style>
-              .countdownContainer {
-            position: absolute;
-            top: 50%;
-            left: 40%;
-            /* right: 40%; */
-            transform: translateX(-50%) translateY(-50%);
-            text-align: center;
-            background: green;
-            padding: 10px;
-            box-shadow: 0 0 5px 3px;
-          }
 
-          .broucherbutton {
-            
-            left: 50%;
-          }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDEEEAS</title>
 
-          .info {
-            font-size: 90px;
-          }
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script type="text/javascript"></script>
+</head>
 
-          .headding {
-            font-size: 50px;
-          }
-          @media only screen and (max-width:970px){
-            .headding{
-                padding-bottom: -400px;;
-            }
-            #i1{
-              width: 75px;
-              height: 75px;
-            }
-            #i2{
-              width: 75px;
-              height: 75px;
-            }
-            #i3{
-              width: 90px;
-              height: 75px;
-            }
-            #i4{
-              width: 70px;
-              height: 70px;
-            }
-            #days{
-              font-size: 30px;
-            }
-            #minutes{
-              font-size: 30px;
-            }
-            #seconds{
-              font-size: 30px;
-            }
-            #hours{
-              font-size: 30px;
-            }
-            #d1,#d2,#d3{
-              font-size: 30px;
-            }
-            #schedule{
-              padding-top: 240px;
-            }
-        }
-      </style>
-    <body >
-     
-     <div class="jumbotron-fluid justify-content-center cont"  >
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true" ></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
-          
-          <div class="topnav nav nav-bar fixed-top" id="myTopnav">
-            <a href="#home">Home</a>
-            <a href="#schedule">Schedule</a>
-            <a href="#domains">Events</a>
-            <a href="contactUs.html">About Us</a>
-            <!-- <a href="registration.html">Register <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
-           
-          </div><br><br><br><br><br>
-          <div class="row">
-            <div class="col md-3">
-              <img id="i1" src="sit.png" alt="" width="150px" height="100px">
-              </div>
-              <div class="col md-3">
-                <img id="i3" src="ieee-bangalore.png" alt="" width="200px" height="100px">
-                </div>
-                <div class="col md-3">
-                  <img id="i5" src="emb.png" alt="" width="200px" height="110px">
-                  </div>
-                  <div class="col md-3">
-                    <img id="i6" src="photonics.png" alt="" width="200px" height="110px">
-                    </div>
-                    <div class="col md-3">
-                      <img id="i4" src="WI.png" alt="" width="130px" height="90px">
-                      </div>
-              <div class="col md-3">
-                <img id="i2" src="ieee.png" alt="" width="150px" height="100px">
-                </div>  
-            
-            
-          </div>
-          <br>
-          <section id="home">
-          <div class="nav-head" data-aos="fade-down">IdEEEas</div>
-          <h3 class="homep text-break" data-aos="fade-right" style="font-size:x-large;">A national level technical  symposium<br>An arena for students and professionals to flaunt their technical skills, <br> share knowledge and network with people with different domain.</h3>
-      
+<style>
+  .countdownContainer {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    /* right: 40%; */
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    background: green;
+    padding: 10px;
+    box-shadow: 0 0 5px 3px;
+  }
+
+  .broucherbutton {
+
+    left: 50%;
+  }
+
+  .info {
+    font-size: 90px;
+  }
+
+  .headding {
+    font-size: 50px;
+  }
+
+  @media only screen and (max-width:970px) {
+    .headding {
+      padding-bottom: -400px;
+      ;
+    }
+
+    #i1 {
+      width: 75px;
+      height: 75px;
+    }
+
+    #i2 {
+      width: 75px;
+      height: 75px;
+    }
+
+    #i3 {
+      width: 90px;
+      height: 75px;
+    }
+
+    #i4 {
+      width: 70px;
+      height: 70px;
+    }
+
+    #days {
+      font-size: 30px;
+    }
+
+    #minutes {
+      font-size: 30px;
+    }
+
+    #seconds {
+      font-size: 30px;
+    }
+
+    #hours {
+      font-size: 30px;
+    }
+
+    #d1,
+    #d2,
+    #d3 {
+      font-size: 30px;
+    }
+
+    #schedule {
+      padding-top: 240px;
+    }
+  }
+</style>
+
+<body>
+
+  <div class="jumbotron-fluid justify-content-center cont">
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-square-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-circle-thin fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+
+    <div class="topnav nav nav-bar fixed-top" id="myTopnav">
+      <a href="#home">Home</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#domains">Events</a>
+      <a href="contactUs.html">About Us</a>
+      <!-- <a href="registration.html">Register <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
+
+    </div><br><br><br><br><br>
+    <div class="row">
+      <div class="col md-3">
+        <img id="i1" src="sit.png" alt="SIT LOGO" width="120px" height="100px">
+      </div>
+      <div class="col md-3">
+        <img id="i3" src="ieee-bangalore.png" alt="IEEE BANGLORE SECTION LOGO" width="200px" height="100px">
+      </div>
+      <div class="col md-3">
+        <img id="i5" src="emb.png" alt="EMB LOGO" width="200px" height="110px">
+      </div>
+      <div class="col md-3">
+        <img id="i6" src="photonics.png" alt="IEEE PHOTONICS LOGO" width="200px" height="110px">
+      </div>
+      <div class="col md-3">
+        <img id="i4" src="WI.png" alt="WIE LOGO" width="130px" height="90px">
+      </div>
+      <div class="col md-3">
+        <img id="i2" src="ieee.png" alt="IEEE LOGO" width="150px" height="80px">
+      </div>
+
+
+    </div>
+    <br>
+    <section id="home">
+      <br><br><br><br>
+      <div class="nav-head" data-aos="fade-down">IdEEEas&nbsp;2k21</div>
+      <!-- <div class="nav-head" data-aos="fade-down">2k21</div> -->
+      <h3 class="homep text-break" data-aos="fade-right" style="font-size:x-large;">A national level technical
+        symposium<br>An arena for students and professionals to flaunt their technical skills, <br> share knowledge and
+        network with people with different domain.</h3>
+
       <div class="timer " data-aos="fade-left">
         <!-- <h2 class="lastDay ">Last Day to register 25/June/2021</h2> -->
         <br>
@@ -155,9 +178,9 @@
       </div>
       <div class="wieInfo text-break" data-aos="fade-right">
 
-        
+
         <div id="removediv">
-          
+
           <h1 id="eventstart" class="headding" style="font-size: 50px;">Event Starts in..... </h1>
 
           <table class="mytable" style="margin-left: auto; margin-right: auto;">
@@ -193,18 +216,18 @@
           </table><br><br>
           <div class="mydiv">
             <h1 id="zerocontent" style="color: white;font-size: 50px;"></h1>
-        </div>
+          </div>
         </div>
       </div>
   </div>
-  
-    </section>  
-      
-    
+
+  </section>
+
+
   <h1 id="schedule" class="text-left" data-aos="fade-right">Schedule</h1>
   <!-- schedule -->
   <section id="timeline" data-aos="fade-up">
-   
+
     <article data-aos="fade-up">
       <div class="inner">
         <span class="date">
@@ -212,7 +235,7 @@
           <span class="month">June</span>
           <span class="year">2021</span>
         </span>
-        <div class="eventHead" >Registration Start</div>
+        <div class="eventHead">Registration Start</div>
         <p class="text-break">Team/Individual can register themselves for individual events by submitting details.</p>
       </div>
     </article>
@@ -284,7 +307,7 @@
           <h2 style="color:white">Hackathon</h2>
           <a href="hackathon.html"><img src="hack_tile.png" alt="Not" width="300px" height="200px"></a>
         </div>
-      </div>      
+      </div>
     </div><br>
     <div class="container">
       <div class="row">
@@ -301,23 +324,27 @@
           <a href="debate.html"><img src="debating.png" alt="Not" width="300px" height="200px"></a>
         </div>
       </div>
-    </div>   
-    <div class="broucherbutton">
-      <a href="cnario_Brochure.pdf" target="_blank" class="btn btn-info btn-lg" download>Download Brochure for IdEEEas</a>
     </div>
+    <!-- <div class="broucherbutton">
+      <a href="cnario_Brochure.pdf" target="_blank" class="btn btn-info btn-lg" download>Download Brochure for
+        IdEEEas</a>
+    </div> -->
   </section>
   <br><br>
-<footer>
-    
-  <div>  <h5>Made with   <span><i class="fa fa-heart" id="heart" aria-hidden="true"></i> </span>  by <span> <a href="https://edu.ieee.org/in-sit/" target="_blank">IEEE_SIT_SB</a></span></h5></div>
+  <footer>
+
+    <div>
+      <h5>Made with <span><i class="fa fa-heart" id="heart" aria-hidden="true"></i> </span> by <span> <a
+            href="https://edu.ieee.org/in-sit/" target="_blank">IEEE_SIT_SB</a></span></h5>
+    </div>
   </footer>
 
 
 
   <script src="index1.js"></script>
   <script>
-    function timezero(){
-      document.getElementById("zerotime").innerHTML="Hello!!";
+    function timezero() {
+      document.getElementById("zerotime").innerHTML = "Hello!!";
     }
     function countdown() {
       var now = new Date();
@@ -341,11 +368,11 @@
       h = (h < 10) ? "0" + h : h;
       m = (m < 10) ? "0" + m : m;
       s = (s < 10) ? "0" + s : s;
-      var dd=parseInt(d);
-      var hh=parseInt(h);
-      var mm=parseInt(m);
-      var ss=parseInt(s);
-      if(dd<=0 && hh<=0 && mm<=0 && ss<=0){
+      var dd = parseInt(d);
+      var hh = parseInt(h);
+      var mm = parseInt(m);
+      var ss = parseInt(s);
+      if (dd <= 0 && hh <= 0 && mm <= 0 && ss <= 0) {
         document.getElementById("days").textContent = "00";
         document.getElementById("days").innerText = "00";
 
@@ -356,7 +383,7 @@
         // document.getElementsById("removediv").style.display="none";
         document.getElementById("zerocontent").innerHTML = "Event is live now!!!"
       }
-      else{
+      else {
         document.getElementById("days").textContent = d;
         document.getElementById("days").innerText = d;
 
@@ -366,10 +393,10 @@
 
         setTimeout(countdown, 1000);
       }
-      
+
     }
     countdown();
   </script>
-    </body>
+</body>
+
 </html>
-        
