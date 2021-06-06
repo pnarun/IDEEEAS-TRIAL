@@ -47,6 +47,7 @@ padding: 0.4%;
   overflow: hidden;
   background-color: rgba(27, 0, 46);
   z-index: -6;
+  
   /* background-color: rgba(255, 255, 255, 0); */
   
 }
@@ -60,14 +61,15 @@ padding: 0.4%;
   text-decoration: none;
   font-size: 20px;
   font-weight: lighter;
-  font-family: 'Dela Gothic One','Rakkas';
-  
+  /* font-family: 'Dela Gothic One','Rakkas'; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
 }
 @media screen and (max-width:700px)
 {
   .topnav a{font-size: 17px;
     margin: 4px;
    padding: 2px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 }
 
@@ -107,13 +109,18 @@ padding: 0.4%;
 */
 /* Add a color to the active/current link */
 h2{
-    font-family: 'Dela Gothic One';
+    /* font-family: 'Dela Gothic One'; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: lighter;
     font-size: 40px;
     color: rgb(160, 221, 201);
     text-align: center;
     padding-top: 10px;
     margin-bottom: 0;
+}
+
+.main h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .main p{
@@ -309,7 +316,7 @@ h2{
   .one h2{/*font-size: 14px;*/
     margin: 4px;
    padding: 2px;
-      top: 55%;
+      top: 60%;
       left: 35%;
       font-size: medium;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

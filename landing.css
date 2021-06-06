@@ -125,13 +125,31 @@ h2>a:hover
   overflow: hidden;
 
 }
+
+.mainlogo img{
+  width: 80%;
+  height: 5%;
+}
+
+@media screen and (width:700px) 
+{
+  .mainlogo img{
+    width: 80%;
+    height: 25%;
+  }
+  
+}
+
 .nav-head
 {
   font-size: 9em;
   text-align: center;
   color: rgb(160, 221, 201);
-  font-family: 'Nosifer','Black Ops One', cursive;
-  font-family: 'Limelight', cursive;
+  /* font-family: 'Nosifer','Black Ops One', cursive; */
+  /* font-family: 'Limelight', cursive;  */
+  /* font-family: 'Nosifer','Black Ops One', cursive; */
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Poppins', sans-serif;
   animation: flash  infinite ease-out;
   animation-duration: 3.5s;
 }
@@ -151,7 +169,6 @@ h2>a:hover
 .homep {
   margin-top: 20px;
   font-size:15px;
-  
 }
 
 }
@@ -312,6 +329,10 @@ span>a
 }
 
 
+.ScheduleMain h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 /* timeline */
 section#timeline {
   margin: 0;
@@ -350,6 +371,7 @@ section#timeline article div.inner {
   margin: 5px 0 0 0;
   border-radius: 6px;
   border: 1px rgb(252, 252, 203) solid;
+
 }
 section#timeline article div.inner span.date {
   display: block;
@@ -497,7 +519,8 @@ section#timeline article:nth-child(4) div.inner div.eventHead:after {
   text-decoration: none;
   font-size:2em;
   font-weight: lighter;
-  font-family: 'Dela Gothic One','Rakkas'; 
+  /* font-family: 'Dela Gothic One','Rakkas';  */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 @media screen and (max-width:700px)
 {
